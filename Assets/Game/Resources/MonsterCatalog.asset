@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf6d05187cb57c49b8bea5f5ff284d2, type: 3}
+  m_Name: MonsterCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::MeadowQuest.MonsterCatalog
+  monsters:
+  - {fileID: 11400000, guid: 11d1b251124cf394799415f21aad8614, type: 2}
+  - {fileID: 11400000, guid: 266971cbaf5c5e244ac1edac299988da, type: 2}
+  - {fileID: 11400000, guid: abb6579a5d50e9742834f2b58c37d5f3, type: 2}
+  - {fileID: 11400000, guid: 147ae3f8e6eb6b64d885337ddaf6d853, type: 2}
+  - {fileID: 11400000, guid: b6bca7db960a5964fa670bb4e3678a18, type: 2}
+  - {fileID: 11400000, guid: 76409ca9ef6161b4ca6c3fd8f7ebb369, type: 2}

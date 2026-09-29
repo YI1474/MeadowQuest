@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5271f2accf61e54782a7158f77457ea, type: 3}
+  m_Name: Wild
+  m_EditorClassIdentifier: Assembly-CSharp::MeadowQuest.MonsterDefinition
+  id: wild
+  growthDataVersion: 1
+  baseExperience: 64
+  effortYield: 000000000000000000000000000000000000000001000000i
+  element: Grass
+  moves:
+  - {fileID: 11400000, guid: d0907c8115cc072468fc93b06ab99172, type: 2}
+  - {fileID: 11400000, guid: ad0268cc20745344fb2b95b523c4983f, type: 2}
+  level: 8
+  baseHp: 45
+  baseAttack: 50
+  baseDefense: 45
+  baseSpecialAttack: 45
+  baseSpecialDefense: 45
+  baseSpeed: 55
+  displayName: "\u30AF\u30B5\u30C8\u30AB\u30B2"
+  portrait: {fileID: 21300000, guid: 118534b5d404ec545ab71a3baed49766, type: 3}
+  backPortrait: {fileID: 21300000, guid: ba755abe03490364fb29104a889b6c1d, type: 3}
+  maxHp: 24
+  attack: 5

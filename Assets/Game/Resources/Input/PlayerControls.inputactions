@@ -1,0 +1,128 @@
+{
+  "controlSchemes": [],
+  "maps": [
+    {
+      "bindings": [
+        {
+          "name": "WASD",
+          "isComposite": true,
+          "path": "2DVector(mode=1)",
+          "action": "Move",
+          "isPartOfComposite": false,
+          "id": "c70dfce4-ba43-472d-8d34-bbbde93487ab"
+        },
+        {
+          "name": "up",
+          "isComposite": false,
+          "path": "<Keyboard>/w",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "02b2188e-19c9-4892-ab65-afd8041dd484"
+        },
+        {
+          "name": "down",
+          "isComposite": false,
+          "path": "<Keyboard>/s",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "e49808f8-1a2e-415e-9932-003db4a08c94"
+        },
+        {
+          "name": "left",
+          "isComposite": false,
+          "path": "<Keyboard>/a",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "e03ec833-0f64-4877-9d64-57cde54738f5"
+        },
+        {
+          "name": "right",
+          "isComposite": false,
+          "path": "<Keyboard>/d",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "ce9324e9-b9ff-4587-8136-f707b96f5413"
+        },
+        {
+          "name": "Arrows",
+          "isComposite": true,
+          "path": "2DVector(mode=1)",
+          "action": "Move",
+          "isPartOfComposite": false,
+          "id": "266ff6bc-15a4-41c7-bac4-13a0cfba0b91"
+        },
+        {
+          "name": "up",
+          "isComposite": false,
+          "path": "<Keyboard>/upArrow",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "cdc956e5-eb07-42e0-97e0-777c500fe3ad"
+        },
+        {
+          "name": "down",
+          "isComposite": false,
+          "path": "<Keyboard>/downArrow",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "1d8ee563-3054-4186-b226-9a72b6abddd9"
+        },
+        {
+          "name": "left",
+          "isComposite": false,
+          "path": "<Keyboard>/leftArrow",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "d30dacec-d8d7-413d-9795-a9192aaefb50"
+        },
+        {
+          "name": "right",
+          "isComposite": false,
+          "path": "<Keyboard>/rightArrow",
+          "action": "Move",
+          "isPartOfComposite": true,
+          "id": "7adbcacb-8e64-41b3-87cc-a7b6e031cd03"
+        },
+        {
+          "name": "",
+          "id": "926e0e6c-e017-4db2-a696-efe1fc03865e",
+          "path": "<Keyboard>/e",
+          "action": "Interact",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "9bdfb8e2-75e6-4c73-be1e-67865b5dfc90",
+          "path": "<Keyboard>/enter",
+          "action": "Interact",
+          "isComposite": false,
+          "isPartOfComposite": false
+        }
+      ],
+      "actions": [
+        {
+          "name": "Move",
+          "initialStateCheck": true,
+          "expectedControlType": "Vector2",
+          "id": "5b7f80d5-faf7-4982-b158-1755d89fae95",
+          "processors": "",
+          "interactions": "",
+          "type": "Value"
+        },
+        {
+          "name": "Interact",
+          "type": "Button",
+          "id": "5561bf2f-c2a4-4dc9-83c9-e35a65e1f285",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        }
+      ],
+      "id": "c44a9a0b-035b-464c-ab4f-a843fa50de36",
+      "name": "Gameplay"
+    }
+  ],
+  "name": "PlayerControls"
+}

@@ -1,0 +1,11 @@
+id,name,element,baseHp,baseAttack,front,back,moves,level,baseDefense,baseSpecialAttack,baseSpecialDefense,baseSpeed,baseExperience,evHp,evAttack,evDefense,evSpecialAttack,evSpecialDefense,evSpeed
+starter,アオマル,Water,60,55,Assets/Game/Art/Starter.png,Assets/Game/Art/MonsterBacks/2_0_back.png,water_pulse|tackle,10,50,60,50,50,64,0,0,0,0,0,1
+wild,クサトカゲ,Grass,45,50,Assets/Game/Art/Wild.png,Assets/Game/Art/MonsterBacks/1_0_back.png,leaf_strike|tackle,8,45,45,45,55,64,0,0,0,0,0,1
+akabine,アカビネ,Fire,48,58,Assets/Game/Art/Monsters/3_0.png,Assets/Game/Art/MonsterBacks/3_0_back.png,ember_arc|tackle,8,40,48,42,62,65,0,1,0,0,0,0
+mizuhane,ミズハネ,Water,52,40,Assets/Game/Art/Monsters/4_0.png,Assets/Game/Art/MonsterBacks/4_0_back.png,water_pulse|tackle,8,45,62,55,48,66,0,0,0,1,0,0
+sunakuri,スナクリ,Normal,55,55,Assets/Game/Art/Monsters/5_0.png,Assets/Game/Art/MonsterBacks/5_0_back.png,coil_snap|tackle,9,60,35,45,40,68,0,0,1,0,0,0
+haineko,ハイネコ,Normal,45,52,Assets/Game/Art/Monsters/6_0.png,Assets/Game/Art/MonsterBacks/6_0_back.png,paw_dance|tackle,9,40,45,45,70,67,0,0,0,0,0,1
+kororingo,コロリンゴ,Grass,58,38,Assets/Game/Art/Monsters/10_0.png,Assets/Game/Art/MonsterBacks/10_0_back.png,seed_burst|tackle,8,50,62,58,34,65,1,0,0,0,0,0
+yorumedama,ヨルメダマ,Normal,42,35,Assets/Game/Art/Monsters/9_0.png,Assets/Game/Art/MonsterBacks/9_0_back.png,echo_ring|tackle,10,38,65,48,68,70,0,0,0,1,0,0
+shizukukurage,シズククラゲ,Water,54,35,Assets/Game/Art/Monsters/18_0.png,Assets/Game/Art/MonsterBacks/18_0_back.png,water_pulse|echo_ring,10,42,60,68,41,72,0,0,0,0,1,0
+koganegumo,コガネグモ,Normal,50,62,Assets/Game/Art/Monsters/20_0.png,Assets/Game/Art/MonsterBacks/20_0_back.png,shell_bump|tackle,11,70,30,45,38,74,0,0,1,0,0,0

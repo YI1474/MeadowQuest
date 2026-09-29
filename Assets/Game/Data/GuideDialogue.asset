@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f140b493ccd91ad449ba42ea1ea90000, type: 3}
+  m_Name: GuideDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::MeadowQuest.DialogueData
+  speaker: 草原の案内人
+  lines:
+  - ようこそ、はじまりの草原へ！　きみの冒険はここから始まるよ。
+  - まずは道に沿って歩いてみよう。茂みの向こうには進めないから、回り道をしてね。
+  - この草原には、不思議な生き物が暮らしているんだ。どんな仲間に出会えるか、楽しみだね。
+

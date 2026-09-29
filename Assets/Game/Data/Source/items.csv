@@ -1,0 +1,12 @@
+id,name,description,effect,value,buyPrice,sellPrice,useInField,useInBattle,initialCount
+potion,若葉のしずく,生きている仲間のHPを20回復する。,HealHp,20,120,30,true,true,3
+leaf_salve,木漏れ日軟膏,生きている仲間のHPを60回復する。,HealHp,60,350,90,true,true,2
+amber_tonic,琥珀の滋養液,生きている仲間のHPを120回復する。,HealHp,120,800,200,true,true,0
+forest_dew,深森の朝露,生きている仲間のHPを全回復する。,HealAll,1,1500,375,true,true,0
+echo_seed,こだまの種,生きている仲間の全ての技のPPを5ずつ回復する。,RestorePp,5,500,125,true,true,1
+dawn_bud,暁のつぼみ,ひんしの仲間を最大HPの半分で復帰させる。,Revive,50,1000,250,true,true,1
+bond_thread,縁結びの糸,野生の仲間を迎えるための捕獲道具。捕獲倍率100％。,Capture,100,200,50,false,true,5
+moon_thread,月織りの糸,野生の仲間を迎えるための捕獲道具。捕獲倍率150％。,Capture,150,600,150,false,true,0
+star_thread,星紡ぎの糸,野生の仲間を迎えるための捕獲道具。捕獲倍率200％。,Capture,200,1200,300,false,true,0
+clear_incense,澄風の香,仲間の状態異常を取り除くためのお香。,CureStatus,1,350,85,true,true,0
+trail_sachet,静道の香袋,100歩のあいだ野生との遭遇を避けるための香袋。,Repel,100,250,60,true,false,0

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "12_0",
+    "prompt": "Use case: stylized-concept. Create one rear-view pixel-art game creature sprite for asset 12_0. Reference image: color palette and creature identity reference. Genuinely redesign the anatomy into this simpler cute creature: A little tan root woodland creature with stubby root feet, tiny rounded arms and a green leafy sprout on top. Simplify the body to a friendly rounded root silhouette. View from behind, creature facing away toward upper right; show the back as the dominant surface, no face looking toward viewer. Full body centered with generous clear margins. Crisp low-resolution pixel art, dark pixel outlines, limited solid colors and small clusters of pixel shading, readable when reduced to 128x128. Transparent alpha background, no scenery, lettering, ground shadow, or checkerboard.",
+    "status": "generated_redesign"
+  },
+  {
+    "id": "14_1",
+    "prompt": "Use case: stylized-concept. Create one rear-view pixel-art game creature sprite for asset 14_1. Reference image: color palette and creature identity reference. Genuinely redesign the anatomy into this simpler cute creature: A fluffy white small bird with dark gray wings and tail, orange feet and a loop shaped feather tuft. Simplify feathers into clean chunky shapes. View from behind, creature facing away toward upper right; show the back as the dominant surface, no face looking toward viewer. Full body centered with generous clear margins. Crisp low-resolution pixel art, dark pixel outlines, limited solid colors and small clusters of pixel shading, readable when reduced to 128x128. Transparent alpha background, no scenery, lettering, ground shadow, or checkerboard.",
+    "status": "generated_redesign"
+  },
+  {
+    "id": "26_1",
+    "prompt": "Use case: stylized-concept. Create one rear-view pixel-art game creature sprite for asset 26_1. Reference image: color palette and creature identity reference. Genuinely redesign the anatomy into this simpler cute creature: A round pale olive gray hamster with round ears and little purple feet. Simplify to a soft spherical furry silhouette. View from behind, creature facing away toward upper right; show the back as the dominant surface, no face looking toward viewer. Full body centered with generous clear margins. Crisp low-resolution pixel art, dark pixel outlines, limited solid colors and small clusters of pixel shading, readable when reduced to 128x128. Transparent alpha background, no scenery, lettering, ground shadow, or checkerboard.",
+    "status": "generated_redesign"
+  },
+  {
+    "id": "32_0",
+    "prompt": "Use case: stylized-concept. Create one rear-view pixel-art game creature sprite for asset 32_0. Reference image: color palette and creature identity reference. Genuinely redesign the anatomy into this simpler cute creature: A golden ochre star-shaped woodland creature, tiered broad triangular points, small turquoise accent on its upper crest. Round off its points and simplify its layered shape. View from behind, creature facing away toward upper right; show the back as the dominant surface, no face looking toward viewer. Full body centered with generous clear margins. Crisp low-resolution pixel art, dark pixel outlines, limited solid colors and small clusters of pixel shading, readable when reduced to 128x128. Transparent alpha background, no scenery, lettering, ground shadow, or checkerboard.",
+    "status": "generated_redesign"
+  },
+  {
+    "id": "37_0",
+    "prompt": "Use case: stylized-concept. Create one rear-view pixel-art game creature sprite for asset 37_0. Reference image: color palette and creature identity reference. Genuinely redesign the anatomy into this simpler cute creature: A cute toy-like green and lavender scorpion creature with a round green carapace, small rounded lavender pincers, short legs and a curled segmented lavender tail ending in a round tip. Gentle rounded anatomy. View from behind, creature facing away toward upper right; show the back as the dominant surface, no face looking toward viewer. Full body centered with generous clear margins. Crisp low-resolution pixel art, dark pixel outlines, limited solid colors and small clusters of pixel shading, readable when reduced to 128x128. Transparent alpha background, no scenery, lettering, ground shadow, or checkerboard.",
+    "status": "generated_redesign"
+  },
+  {
+    "id": "42_1",
+    "prompt": "Use case: stylized-concept. Create one rear-view pixel-art game creature sprite for asset 42_1. Reference image: color palette and creature identity reference. Genuinely redesign the anatomy into this simpler cute creature: A cute gray segmented cocoon worm with a large round head and tapered curved lower body. Smooth rounded segments and small coral pink markings near the head. Closed simple face on the far side, hidden from viewer. View from behind, creature facing away toward upper right; show the back as the dominant surface, no face looking toward viewer. Full body centered with generous clear margins. Crisp low-resolution pixel art, dark pixel outlines, limited solid colors and small clusters of pixel shading, readable when reduced to 128x128. Transparent alpha background, no scenery, lettering, ground shadow, or checkerboard.",
+    "status": "generation_safety_rejected",
+    "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 3c3a1e7f-550d-411b-892a-bd5112d23d98.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")"
+  },
+  {
+    "id": "51_0",
+    "prompt": "Use case: stylized-concept. Create one rear-view pixel-art game creature sprite for asset 51_0. Reference image: color palette and creature identity reference. Genuinely redesign the anatomy into this simpler cute creature: A little pale gray woodland beetle with a long rounded shell, short brown legs, and a coral pink soft rounded crest along its back. Simplify the narrow head and replace sharp dorsal shapes with rounded bumps. View from behind, creature facing away toward upper right; show the back as the dominant surface, no face looking toward viewer. Full body centered with generous clear margins. Crisp low-resolution pixel art, dark pixel outlines, limited solid colors and small clusters of pixel shading, readable when reduced to 128x128. Transparent alpha background, no scenery, lettering, ground shadow, or checkerboard.",
+    "status": "generated_redesign"
+  }
+]

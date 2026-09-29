@@ -1,0 +1,10 @@
+id,name,element,power,accuracy,maxPp,category
+tackle,たいあたり,Normal,35,100,35,Physical
+water_pulse,みずのたま,Water,40,100,25,Special
+leaf_strike,はっぱうち,Grass,40,100,25,Physical
+ember_arc,火粉の弧,Fire,40,100,25,Special
+coil_snap,巻きしならせ,Normal,45,100,25,Physical
+paw_dance,前足の舞,Normal,40,100,30,Physical
+seed_burst,種のはじけ,Grass,40,100,25,Special
+echo_ring,こだまの輪,Normal,45,100,25,Special
+shell_bump,甲殻ぶつけ,Normal,45,100,25,Physical

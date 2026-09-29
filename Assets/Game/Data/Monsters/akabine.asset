@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5271f2accf61e54782a7158f77457ea, type: 3}
+  m_Name: akabine
+  m_EditorClassIdentifier: Assembly-CSharp::MeadowQuest.MonsterDefinition
+  id: akabine
+  growthDataVersion: 1
+  baseExperience: 65
+  effortYield: 000000000100000000000000000000000000000000000000i
+  element: Fire
+  moves:
+  - {fileID: 11400000, guid: 46a9dc7946297554097908e021164351, type: 2}
+  - {fileID: 11400000, guid: ad0268cc20745344fb2b95b523c4983f, type: 2}
+  level: 8
+  baseHp: 48
+  baseAttack: 58
+  baseDefense: 40
+  baseSpecialAttack: 48
+  baseSpecialDefense: 42
+  baseSpeed: 62
+  displayName: "\u30A2\u30AB\u30D3\u30CD"
+  portrait: {fileID: 21300000, guid: 8aeb309f2f81d824bb4d5a2f2b2f6c58, type: 3}
+  backPortrait: {fileID: 21300000, guid: 5e5c973558f155e48818dcd3c3dc35ed, type: 3}
+  maxHp: 30
+  attack: 7
