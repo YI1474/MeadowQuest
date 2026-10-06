@@ -9,6 +9,9 @@
 /.vs/
 /.idea/
 *.csproj
+!Tests/MeadowQuest.Checks.csproj
+/Tests/bin/
+/Tests/obj/
 *.sln
 *.slnx
 *.user

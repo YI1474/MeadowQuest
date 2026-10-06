@@ -1,38 +1,46 @@
 # Meadow Quest
 
-Unityで制作中の、モンスターを仲間にして育てる短編2D RPGです。
-はじまりの街から草原・洞窟を抜け、岩峰の街の試練場で師範に挑む構成です。
+Unity / C#で制作した、モンスターを仲間にして育てる短編2D RPGです。
+はじまりの街から草原・洞窟を抜け、岩峰の街の試練場で師範に挑みます。
 
-## 開発環境と起動
+## 主な機能
 
-- Unity 6000.6.2f1
-- Input System 1.20.0
-- Unity UI 2.6.0
+- タイル単位の探索、会話、建物への出入り、エリア移動
+- 技選択・タイプ相性・交代・捕獲を含むターン制バトル
+- 基本種10種類、最大6匹の手持ち、成長・並び替え
+- 道具の使用・売買、所持金、回復所
+- 対戦NPCとの連戦・再戦、師範撃破後のクリア表示とクレジット
+- JSONによる手動セーブ・ロード（自動セーブなし）
 
-Unity Hubからこのフォルダを追加し、パッケージの復元とインポート完了後に
-Assets/Game/Scenes/Meadow.unity を開いて再生します。
-Assetsと同じ階層にPackages・ProjectSettingsが必要です。
-初回の完全に新しい環境での起動・ビルドは、公開前の確認事項として残っています。
+## 制作範囲と使用ツール
 
-エディター補助ツールには、未設定の機能の追加や旧バージョンのシーンを更新する処理があります。
-編集したシーンは再生停止中に保存してください。すべてのBuild/Setupを再実行する必要はありません。
+個人制作として、ゲーム仕様の選択・調整、Unity上でのプレイ確認、不具合の報告と改善方針の判断を行っています。
+コードとエディターツールの作成・修正にはCodex、モンスターの背面画像制作には画像生成AIを使用しています。人物・地形・モンスター等には外部素材を使用しています。
 
-## 実装している機能
+## 設計上の工夫
 
-- タイル単位の移動、障害物、会話、建物への出入り、エリア移動
-- はじまりの街・草原・洞窟・岩峰の街・試練場、回復所と道具屋
-- 技選択、タイプ相性、交代、捕獲を含むターン制バトル
-- 基本種10種類、最大6匹の手持ち、ステータス表示と並び替え
-- 経験値・レベル・素質・鍛錬値・性格補正
-- 相手を倒すごとに手持ち全員へ経験値と鍛錬値を付与（各上限あり）
-- 道具一覧・説明・使用、買い物と売却、所持金
-- 対戦NPCの接近、複数体との連戦、話しかけて再戦
-- 師範はその場で挑戦を待つ。レンは2匹、師範は3匹
-- 師範に勝利するとクリア表示とクレジット
-- JSONによる手動セーブ・ロード。自動セーブは行わない
+- **CSVからゲーム用データへ変換**：種族・技・道具を表形式で管理し、エディターツールでScriptableObjectへ取り込みます。パラメータ調整とゲーム処理を分けています。
+- **共通定義と個体の状態を分離**：種族の共通データと、各個体のHP・経験値・習得技などを別に管理します。
+- **計算と画面表示を分離**：戦闘の状態遷移、ダメージ、成長計算をUnityの画面に依存しないクラスにまとめ、コンソールテストで確認できるようにしています。
+- **セーブ読み込み時の検証**：形式のバージョン、手持ち数、所持金などを検証してからプレイ状態へ反映します。
+- **シーン制作の補助**：マップ構築・修復・データ検証をエディターメニューから実行できます。生成したシーン・Prefab・タイルはAssets以下に保存します。
 
-再戦時の賞金は初回の半額です。回復を挟む必要はありません。
-味方のHPとPPは戦闘後も引き継ぎます。全員が倒れると回復地点へ戻ります。
+現在は小規模作品として、街や洞窟を同じシーン内の別座標へ配置しています。戦闘以外の進行管理もBattleControllerに集まっているため、今後の拡張時には責務の分離が改善点になります。
+
+## 起動方法
+
+| 項目 | バージョン |
+|---|---|
+| Unity | 6000.6.2f1 |
+| Input System | 1.20.0 |
+| Unity UI | 2.6.0 |
+
+1. リポジトリをクローン、またはZIPで取得・展開します。
+2. Unity Hubから、`Assets`・`Packages`・`ProjectSettings`が入っているフォルダを追加します。
+3. パッケージの復元とインポート完了後、`Assets/Game/Scenes/Meadow.unity`を開きます。
+4. 再生し、Gameビューをクリックして操作します。
+
+通常の起動ではBuild/Setupメニューの再実行は不要です。
 
 ## 操作
 
@@ -41,60 +49,35 @@ Assetsと同じ階層にPackages・ProjectSettingsが必要です。
 | 移動 | WASD / 矢印キー |
 | 話す・会話を進める | E / Enter |
 | メニュー | Tab / M / Esc |
-| メニューを戻る・閉じる | Esc / 画面のボタン |
+| 戻る・閉じる | Esc / 画面のボタン |
 | 戦闘コマンド・道具・仲間の選択 | 画面のボタン |
 | 戦闘の導入文を進める | クリック / Enter / Space |
 | 保存 | メニューの「セーブ」 |
 
-Gameビューにフォーカスして操作してください。
+## コードの入口
 
-## コードとデータの構成
-
-| 対象 | 主な役割 |
+| 主なクラス | 役割 |
 |---|---|
-| KeyboardMoveInput / GridMover / GridMap | 入力・移動・通行判定 |
-| TownWorld / WorldArea / TrainerApproach | エリア・会話・対戦NPC |
-| BattleController / BattleView | 戦闘進行とUI |
-| BattleSession / BattleMath / Progression | 戦闘・成長の計算 |
-| MonsterIndividual / MonsterParty | 個体の状態と手持ち |
-| Inventory / ShopRules | 所持品と売買 |
-| ProgressSave | セーブの検証・保存・読み込み |
-| Assets/Game/Editor | シーン作成・修復・データ取り込みツール |
+| [KeyboardMoveInput](Assets/Game/Scripts/KeyboardMoveInput.cs) / [GridMover](Assets/Game/Scripts/GridMover.cs) / [GridMap](Assets/Game/Scripts/GridMap.cs) | 入力・移動・通行判定 |
+| [BattleController](Assets/Game/Scripts/BattleController.cs) / [BattleView](Assets/Game/Scripts/BattleView.cs) | 戦闘進行とUI |
+| [BattleSession](Assets/Game/Scripts/BattleSession.cs) / [BattleMath](Assets/Game/Scripts/BattleMath.cs) / [Progression](Assets/Game/Scripts/Progression.cs) | 状態遷移・戦闘・成長計算 |
+| [MonsterIndividual](Assets/Game/Scripts/MonsterIndividual.cs) / [MonsterParty](Assets/Game/Scripts/MonsterParty.cs) | 個体と手持ち |
+| [Inventory](Assets/Game/Scripts/Inventory.cs) / [ShopRules](Assets/Game/Scripts/ShopRules.cs) | 所持品と売買 |
+| [ProgressSave](Assets/Game/Scripts/ProgressSave.cs) | 保存・読み込み・検証 |
+| [Editor](Assets/Game/Editor) | シーン作成・修復・CSV取り込み |
 
-Assets/Game/Data/Source のCSVを編集し、
-Meadow Quest > Data > Import CSV でScriptableObjectへ反映します。
-共通定義と、個体のHP・経験値などのプレイ状態を分けて管理しています。
-シーンとPrefab、タイルはAssets以下に保存され、HierarchyやInspectorで編集できます。
-街・洞窟などは同じMeadowシーン内の別座標に配置する方式です。
+詳しい編集手順は[開発用ガイド](DEVELOPMENT.md)、計算・状態遷移のテストは[テスト手順](Tests/README.md)を参照してください。
 
-## エディターメニュー
+## 動作確認と既知の課題
 
-| カテゴリ | 用途 |
-|---|---|
-| Data | CSV取り込み・検証 |
-| Setup | 戦闘・UI等の設定 |
-| Build | 街・洞窟などの構築 |
-| Repair | 入口・表示・入力などの修復 |
-| Validate | マップ・セーブ等の検証 |
+開発PCのUnity Editorで起動・操作を確認しています。別PCでの初回インポートと、配布用実行ファイルのビルド・動作は未確認です。
 
-詳細はCAVE_ROUTE.md、TRAINER_TEAMS_AND_ENDING.md、GROWTH.mdなどを参照してください。
-個別の説明書には実装時点の作業記録も含まれます。
+2026-10-06：C#ソースの整形後にコンパイルを確認し、同梱のコンソールテスト34項目が成功しました。今回の変更後のUnity実プレイは別途確認が必要です。
 
-## 検証と残っている課題
+- 複数体との戦闘で経験値獲得メッセージが見えないという報告があり、表示の確認が残っています。
+- コンソールテストは計算と状態遷移を対象とし、UnityのUIやシーン参照の動作は対象外です。
 
-C#コンパイルと、開発用のモデル検証を実施しています。
-Tests/BattleChecks.csは純粋C#の戦闘ルール確認用で、Unity Test Runner用ではありません。
-開発環境外の検証スクリプトまで、このフォルダにすべて収録されているわけではありません。
-新しい環境でのインポート、実プレイ、ビルドの確認は別途必要です。
+## 素材とライセンス
 
-- 複数体との戦闘で、経験値獲得メッセージが見えないという報告を調査中
-- 地形・入口・UIの表示と操作は継続調整中
-- CC0人物・Guardian Monsters地形への差し替え後のUnity表示確認が必要
-
-## 素材と制作支援
-
-素材の出典、改変内容、確認状況はTHIRD_PARTY_NOTICES.mdを参照してください。
-出典不明だった人物・基本地形は、CC0およびCC BY 4.0素材に差し替え済みです。
-本リポジトリ全体に一律のオープンソースライセンスを設定していません。
-
-コード・エディター用ツールの作成や修正にCodex、背面画像の制作に画像生成AIを使用しています。
+素材の出典・ライセンス・改変内容は[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)に記載しています。
+本リポジトリ全体への一律のオープンソースライセンスは設定していません。
